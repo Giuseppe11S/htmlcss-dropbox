@@ -25,6 +25,7 @@ body{
 .container-right{
   display: flex;
   align-content: center;
+
 }
 
 nav ul {
@@ -61,7 +62,7 @@ ul li {
 
 .container-hero{
   background-color: rgb(180, 208, 230);
-  height: 60vh;
+  height: 68vh;
 }
 
 #title-hero{
@@ -71,13 +72,21 @@ ul li {
   font-size: 62px;
 }
 
-.contaier-hero-middle{
+.container-hero-middle{
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 }
 
-#hero-img{
-  width: 300px;
+.container-hero-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
+
+
+#hero-img{
+  width: 600px;
+}
+
