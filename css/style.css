@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:"Open Sans", sans-serif;;
+}
+
+.container-nav{
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 20px 15px;
+  /* debug */
+}
+
+.container-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.container-right{
+  display: flex;
+  align-content: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+ul li {
+  font-size: 14px;
+  list-style: none;
+  padding: 0px 10px;
+  line-height: 28px;
+}
+
+#logo-nav{
+  padding-left: 10px;
+}
+
+/* REGOLE BOTTONE DEI NAV BAR */
+.btn{
+  padding: 5px 12px;
+  border: none;
+}
+
+.btn-login{
+  background-color: transparent;
+}
+
+.btn-signup{
+  background-color: rgb(1, 97, 254);
+  color: white;
+}
+
+/* Sezione hero */
+
+.container-hero{
+  background-color: rgb(180, 208, 230);
+  height: 60vh;
+}
+
+#title-hero{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  font-size: 62px;
+}
+
+.contaier-hero-middle{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero-img{
+  width: 300px;
+}
