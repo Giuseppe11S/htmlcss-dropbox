@@ -22,40 +22,40 @@
         <div class="container-links">
             <nav>
               <ul>
-                <li>Perchè Dropbox</li>
-                <li>Funzioni</li>
-                <li>Piani e Prezzi</li>
+                <li><a href="">Perchè Dropbox</a></li>
+                <li><a href="">Funzioni</a></li>
+                <li><a href="">Piani e Prezzi</a></li>
               </ul>
             </nav>
         </div>
       </div>
 
       <!-- Container nav di destra -->
-       <div class="container-right">
+       <div class="container-links container-right">
           <nav>
           <ul>
-            <li>Supporto</li>
-            <li>Contatta l'ufficio vendite</li>
-            <li>
-              <button class="btn btn-login">Accedi</button>
+            <li><a href="">Supporto</a></li>
+            <li><a href="">Contatta l'ufficio vendite</a></li>
+            <li><a href="">Accedi</a></li>
+            <li  class="no-hover">
+              <button class=" btn-signup">Inizia</button>
             </li>
-            <li>
-              <button class="btn btn-signup">Inizia</button>
             </li>
            </ul>
+          </div>
          </nav>
         </div>
       </div>
     </section>
-  </header>
-
-  <main>
 
     <section>
       <!-- Hero -->
        <div class="container-hero">
-        <h1 id="title-hero">Tutto ciò che ti serve per il <br>
-        lavoro, in un unico posto</h1>
+        
+        <div id="container-title-hero">
+          <h1 id="title-hero">Tutto ciò che ti serve per il <br>
+          lavoro, in un unico posto</h1>
+          </div>
 
       <div class="container-hero-middle">
 
@@ -66,7 +66,7 @@
         archiviazione sicuro: è un modo intelligente e <br>
         integrato per ottimizzare il flusso di lavoro <br>
         esistente.</p>
-        <button>Inizia la prova gratuita</button>
+        <button id="trial-button">Inizia la prova tua gratuita</button>
         <span>Annulla in qualsiasi momento</span>
         <i class="fa-solid fa-arrow-down"></i>
       </div>
@@ -74,11 +74,80 @@
          <div class="container-img">
           <img id="hero-img" src="img/jumbo.png" alt="">
          </div>
-         
       </div>
     </div>
     </div>
+    </section>
+  </header>
 
+  <main>
+
+    <!-- Sezione delle card con info e prezzi -->
+    <section>
+      <div class="container-main-all">
+        <h2 id="title-main">
+          Trova il piano business che fa per te
+        </h2>
+
+        <div class="container-input">
+          <input type="radio">
+          <label for="monthly">Fatturazione mensile</label>
+          <input type="radio">
+          <label for="yearly">Fatturazione annuale</label>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-all-row">
+      <div class="container-col">
+        <span class="bundle-type single-bundle">Singolo</span>
+        <div class="container-info">
+         <h3 class="plans-title">Professional</h3>
+         <div class="container-plans-details">
+          <span class="plans-price">&euro; 12.00</span>
+          <span class="plans-price">/mese</span>
+        </div>
+        
+        <div class="container-plan-info">
+          <span class="user-icon">1 utente</span>
+          <div class="storage-line">
+            <span class="icon-folder icon-text"></span>
+            <div class="text">
+              <span>5 TB di spazio di archivazione</span>
+              <span>Sicuro</span>
+            </div>
+          </div>       
+          <div class="storage-line">
+            <span class="icon-share icon-text"></span>
+            <div class="text"></div>
+            <span>Funzioni di produttività premium
+            <span>e condivisione file semplice e sicura</span>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="container-col">
+        <span class="bundle-type team-bundle">Team</span>
+        <div class="container-info">
+        <h3 class="plans-title">Advanced</h3>
+        <div class="container-plans-details">
+        <span class="plans-price" >&euro; 12.00</span>
+        <span class="plans-price">/utente/mese</span>
+      </div>
+      </div>
+    </div>
+      <div class="container-col">
+        <span class="bundle-type business-bundle">Azienda</span>
+        <div class="container-info">
+        <h3 class="plans-title">Enterpise</h3>
+        <div class="container-plans-details">
+        <span class="plans-price" >Contattaci</span>
+        <span class="plans-price">-</span>
+      </div>
+      </div>
+    </div>
+    </div>
   </main>
 
   <footer>

@@ -13,6 +13,9 @@ body{
   justify-content: space-between;  
   align-items: center;
   padding: 20px 15px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
   /* debug */
 }
 
@@ -32,6 +35,15 @@ nav ul {
   display: flex;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container-links li:hover{
+  border-bottom: 2px solid black;
+}
+
 ul li {
   font-size: 14px;
   list-style: none;
@@ -44,32 +56,42 @@ ul li {
 }
 
 /* REGOLE BOTTONE DEI NAV BAR */
-.btn{
-  padding: 5px 12px;
-  border: none;
+
+.container-btn{
+  display: flex;
+  align-items: center;
 }
 
-.btn-login{
-  background-color: transparent;
+li.no-hover:hover{
+  border: none;
 }
 
 .btn-signup{
   background-color: rgb(1, 97, 254);
   color: white;
+  padding: 5px 12px;
+  border: none;
+  cursor: pointer;
 }
 
 /* Sezione hero */
 
 .container-hero{
+  padding-top: 50px;
   background-color: rgb(180, 208, 230);
-  height: 68vh;
+  height: 78vh;
 }
 
-#title-hero{
+#container-title-hero{
+  margin-top: 75px;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
-  font-size: 62px;
+  width: 85%;
+}
+#title-hero{  
+  font-size: 55px;
+  text-align: start;
+  font-weight: 800;
 }
 
 .container-hero-middle{
@@ -79,14 +101,174 @@ ul li {
   margin-top: 40px;
 }
 
+#trial-button{
+  background-color: rgb(1, 97, 254);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+.fa-arrow-down{
+  font-size: 35px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
 .container-hero-left{
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-
-#hero-img{
-  width: 600px;
+.container-hero-left span{
+  margin-top: 30px;
 }
 
+#hero-img{
+  width: 650px;
+}
+
+.container-hero-left{
+  font-size: 14px;
+}
+
+/* Sezione main */
+
+.container-main-all{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 0.50px solid rgba(128, 128, 128, 0.571);
+}
+
+#title-main{
+  padding-top: 50px;
+  font-size: 30px;
+  width: 54%;
+}
+
+.container-input{
+  margin-top: 35px;
+  display: flex;
+  width: 53.4%;
+}
+
+.container-input input:last-of-type{
+  margin-left: 35px;
+}
+
+.container-input label{
+  padding-left: 5px;
+}
+
+/* SEZIONE CARD ABBONAMENTI */
+
+.container-col{
+  width: 17%;
+  border: 1px solid rgba(128, 128, 128, 0.313);
+}
+
+.container-info{
+  padding-left: 15px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+.container-all-row{
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.single-bundle::before{
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f007";
+  margin-right: 4px;
+}
+
+.team-bundle::before{
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f0c0";
+  margin-right: 4px;
+}
+
+.business-bundle::before{
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f1ad";
+  margin-right: 4px;
+}
+
+.bundle-type{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.313);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.plans-price{
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.container-plans-details{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.container-plans-details span:last-of-type{
+  color: grey;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.container-plan-info{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: left;
+}
+
+.user-icon::before{
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f007";
+  margin-right: 4px;
+}
+
+
+.storage-line {
+  display: flex;
+  width: 200px;
+  padding-top: 15px;
+}
+
+.icon-folder::before {
+  content: "\f07b";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-top: 2px; /* opzionale per centratura verticale */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-share::before{
+  content: "\f1e0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-top: 2px; /* opzionale per centratura verticale */
+}
+
+.icon-text{
+  padding-right: 3px;
+}
